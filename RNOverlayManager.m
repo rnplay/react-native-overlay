@@ -16,4 +16,10 @@ RCT_EXPORT_MODULE();
 RCT_EXPORT_VIEW_PROPERTY(isVisible, BOOL);
 RCT_EXPORT_VIEW_PROPERTY(aboveStatusBar, BOOL);
 
+- (dispatch_queue_t)methodQueue
+{
+  return dispatch_get_main_queue();
+}
+
+
 @end
